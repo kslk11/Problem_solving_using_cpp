@@ -9,10 +9,6 @@ public:
         {
             n /= 3;
         }
-        if (n == 1)
-        {
-            return true;
-        }
-        return false;
+        return n==1;
     }
 };
