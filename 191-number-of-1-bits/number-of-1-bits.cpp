@@ -8,8 +8,8 @@ public:
             n /= 2;
         }
         int count = 0;
-        for(auto ch :str){
-            if(ch == '1'){
+        for (auto ch : str) {
+            if (ch == '1') {
                 count++;
             }
         }
