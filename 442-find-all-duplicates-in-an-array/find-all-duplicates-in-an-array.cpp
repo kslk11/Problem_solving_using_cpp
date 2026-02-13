@@ -4,9 +4,14 @@ public:
        unordered_map<int ,int> freq;
        vector<int>res;
         for (int i = 0; i < nums.size(); i++) {
-            freq[nums[i]]++;
-            if(freq[nums[i]]==2){
-                res.push_back(nums[i]);
+           int ch =nums[i];
+           if(freq[ch]){
+            freq[ch]++;
+           }else{
+            freq[ch]=1;
+           }
+            if(freq[ch]==2){
+                res.push_back(ch);
             }
         }
         return res;
